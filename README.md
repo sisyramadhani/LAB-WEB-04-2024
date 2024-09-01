@@ -1,4 +1,4 @@
-# LAB-WEB-09-2024 Repository
+# LAB-WEB-04-2024 Repository
 
 Selamat datang di repositori LAB-WEB-04-2024! Repositori ini adalah tempat pengumpulan tugas praktikum untuk mata kuliah Praktikum Pemrograman Web 2024. Berikut adalah panduan singkat untuk mengumpulkan tugas di repositori ini.
 
