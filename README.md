@@ -2,58 +2,75 @@
 
 Selamat datang di repositori LAB-WEB-04-2024! Repositori ini adalah tempat pengumpulan tugas praktikum untuk mata kuliah Praktikum Pemrograman Web 2024. Berikut adalah panduan singkat untuk mengumpulkan tugas di repositori ini.
 
-## Tata Cara Pengumpulan (Commit)
+## Alur pengumpulan tugas ke repositori ini:
 
-Berikut adalah langkah-langkah pengumpulan tugas yang dapat diikuti:
+1. **Fork** repositori ini
 
-1. **Fork Repositori Ini**: Di kanan atas halaman repositori, klik tombol "Fork" untuk membuat salinan repositori ini ke akun GitHub pribadimu.
+2. **Clone** repositori hasil **fork** anda
 
-2. **Kloning Repositori**: Setelah kamu memiliki salinan repositori di akunmu, klik tombol "Code" dan pilih metode untuk mengunduh repositori. Salin URL yang diberikan.
+   ```sh
 
-3. **Buka Terminal**: Buka terminal atau command prompt di laptopmu.
+   git clone https://github.com/YOUR_USERNAME/LAB-WEB-04-2024.git
 
-4. **Kloning Repositori**: Ketik perintah berikut untuk mengkloning repositori ke laptopmu. Ganti `<repository-url>` dengan URL yang telah kamu salin.
+   ```
 
-```bash
-  git clone <url-repositori-hasil-fork>
-```
+3. Setelah anda **clone**, masuk ke folder hasil **clone** tersebut lalu buat **branch** dengan nama **NIM** anda
 
-5. **Buat Cabang (Branch) Baru**: Masuk ke direktori repositori yang telah di-kloning. Lalu buat cabang sesuai nim masing-masing.
+   ```sh
 
-```bash
-cd LAB-WEB-04-2024
-git checkout -b H071231xxx # Sesuaikan dengan NIM masing-masing
-```
+   cd LAB-WEB-04-2024
+   git branch NIM_ANDA
+   git checkout NIM_ANDA
 
-6. **Masuk ke Folder**: Masuk ke directory/folder sesuai NIM.
+   ```
 
-```bash
-cd H071231xxx # Sesuaikan dengan NIM masing-masing
-```
+4. Setelah anda pindah ke **branch** yang telah anda buat, buat sebuah folder dengan nama **NIM** anda dan masuk ke folder tersebut.
+   ```sh
 
-7. **Lakukan Perubahan**: Mulai mengedit atau menambahkan berkas (folder maupun file tugas) sesuai dengan instruksi tugas yang diberikan.
+   mkdir NIM_ANDA
+   cd NIM_ANDA
 
-8. **Tambahkan File Tugas**: Setelah selesai melakukan perubahan pada kode, tambahkan file tugas tersebut lalu.
+   ```
 
-```bash
-git add .
-```
 
-9. **Commit Perubahan**: Setelah semua tugas sudah ditambah, commit dengan pesan yang deskriptif.
+5. Didalam folder tersebut, buat sebuah folder dengan nama **Praktikum-n**, **n** = praktikum keberapa
+   ```sh
 
-```bash
-git commit -m "Task 1: HTML as Skeleton"  # Sesuaikan pesan dengan tugas yang kamu kumpulkan
-```
+   mkdir "Praktikum-n"
+   cd "Praktikum-n"
+   
+   CATATAN: n DI SINI ADALAH NOMOR PRAKTIKUM KE BERAPA
+   CONTOH: Praktikum-1
 
-Note: Untuk cek status file apakah sudah ditambahkan maupun dikomit, bisa dilakukan dengan `git status`
+   ```
 
-10. **Push ke GitHub**: Push cabang baru yang telah kamu buat ke repositori GitHub.
+7. Semua _file_ untuk tugas praktikum ke-**n**, disimpan kedalam folder **Praktikum-n**
+8. Setiap kali melakukan perubahan, lakukan proses **commit** dengan pesan yang deskriptif
 
-```bash
-git push -u origin H071231xxx # Sesuaikan dengan NIM masing-masing
-```
+   ```sh
+   
+   git add . #perintah ini memilih seluruh file sekaligus
+   git status untuk mengecek apakah file sudah ter add atau tidak.
+   Jika file yang ingin di add sudah berwarna hijau lanjut ke commit.
+   Jika file yang ingin di add berwarna merah lakukan add terlebih dahulu
+   
+   git commit -m "pesan mengenai penambahan atau perubahan apa yang anda lakukan"
+   
+   ```
 
-11. **Buka Pull Request**: Di halaman repositori akunmu, akan ada pemberitahuan untuk melakukan `Pull Request`. Klik tautan tersebut lalu lakukan `Pull Request` ke repositori utama ini.
+8. Setelah asistensi dan tugas anda disetujui, **push** seluruh _file_ jawaban yang telah anda buat
+
+   ```sh
+
+   # pastikan proses commit telah selesai terhadap setiap file
+   git push origin NIM_ANDA
+
+   ```
+   
+9. Masuk ke akun GitHub anda, dan buka repo yang telah anda **fork** dan **clone**. Lihat perubahan yang terjadi pada repo tersebut dan pastikan bahwa tugas yang
+   telah anda **push** sesuai dan berada pada repo tersebut.
+   
+10. Pilih menu **Pull request** dan lakukan **pull request** pada tugas praktikum anda.
 
 ## Tips Tambahan
 
